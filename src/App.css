@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+:root {
+  --color-green: #39ff14; /* #41ff00; */
+  --color-pink: #ff00d3;
+  --color-purple: #9100ff;
+  --color-red: #ff0000;
+  --color-black: #000000;
+  --color-claro: #fafafa;
+  --fuente-principal: VT323;
+  --box-shadow-light: 1px 1px 0px 0px var(--color-claro);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #233553;
-  min-height: 100vh;
+body {
+  font-family: var(--fuente-principal);
+  font-size: 1.5rem;
+  background-color: black;
+  color: var(--color-claro);
+  background-image: url(../public/images/pixel-effect-v.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #97ca3f;
+.container-root {
+  margin-top: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* GENERALES */
+.flex {
+  display: flex;
+}
+
+.direccion {
+  flex-direction: column;
+}
+
+.centrar-x {
+  justify-content: center;
+}
+
+.centrar-y {
+  align-items: center;
+}
+
+/* TODO COUNTER */
+.title-ppal {
+  font-size: 3rem;
+  color: var(--color-green);
+  font-weight: lighter;
+  text-shadow: 2px 2px 4px var(--color-black);
+  margin: 0 4rem;
+}
+
+/* TODO SEARCH */
+.campo-search {
+  width: 50vw;
+  height: 35px;
+  box-shadow: var(--box-shadow-light);
+}
+
+.campo-search::placeholder {
+  padding: 0.3rem 0.5rem;
+  outline-color: var(--color-claro);
+  font-family: var(--fuente-principal);
+  font-size: 0.9rem;
+}
+
+/* TODO LIST */
+.container-list {
+  width: 280px;
+  background-color: var(--color-purple);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 4rem;
+  box-shadow: var(--box-shadow-light);
+}
+
+/* TODO ITEM */
+.container-task {
+  margin: 0.5rem;
+}
+
+.pixel {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-green);
+  box-shadow: var(--box-shadow-light);
+  display: inline-block;
+  margin: 0.25rem;
+}
+
+.task-text {
+  display: inline;
+  margin: 0.25rem;
+}
+
+.del-task {
+  color: var(--color-red);
+  background-color: var(--color-claro);
+  justify-content: baseline;
+}
+
+/* TODO BUTTON */
+.container-boton {
+  width: 50vw;
+  justify-content: flex-end;
+}
+
+.boton-add {
+  background-color: var(--color-pink);
+  width: 40px;
+  height: 40px;
+  margin-top: 2rem;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
 }

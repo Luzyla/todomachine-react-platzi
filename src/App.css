@@ -65,10 +65,10 @@ body {
   width: 50vw;
   height: 35px;
   box-shadow: var(--box-shadow-light);
+  padding: 0.3rem 0.5rem;
 }
 
 .campo-search::placeholder {
-  padding: 0.3rem 0.5rem;
   outline-color: var(--color-claro);
   font-family: var(--fuente-principal);
   font-size: 0.9rem;
@@ -98,6 +98,7 @@ body {
   display: inline-block;
   margin: 0.25rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .pixel--active {

@@ -6,7 +6,7 @@
   --color-black: #000000;
   --color-claro: #fafafa;
   --fuente-principal: VT323;
-  --box-shadow-light: 1px 1px 0px 0px var(--color-claro);
+  --box-shadow-light: 2px 2px 0px 1px var(--color-claro);
 }
 
 * {
@@ -66,12 +66,18 @@ body {
   height: 35px;
   box-shadow: var(--box-shadow-light);
   padding: 0.3rem 0.5rem;
+  outline: none;
+  border: none;
 }
 
 .campo-search::placeholder {
   outline-color: var(--color-claro);
   font-family: var(--fuente-principal);
   font-size: 0.9rem;
+}
+
+.campo-search:focus {
+  outline: 2px solid var(--color-purple);
 }
 
 /* TODO LIST */
@@ -91,11 +97,9 @@ body {
 }
 
 .pixel {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: var(--color-green);
-  box-shadow: var(--box-shadow-light);
-  display: inline-block;
   margin: 0.25rem;
   text-align: center;
   cursor: pointer;
@@ -104,6 +108,10 @@ body {
 .pixel--active {
   color: var(--color-green);
   background-color: var(--color-claro);
+}
+
+.icon-pixel {
+  padding: 0.1rem;
 }
 
 .task-text {
@@ -117,12 +125,12 @@ body {
 
 .del-task {
   color: var(--color-black);
-  background-color: var(--color-claro);
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .del-task:hover {
   color: var(--color-red);
-  background-color: transparent;
   cursor: pointer;
 }
 

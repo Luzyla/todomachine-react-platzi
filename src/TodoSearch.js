@@ -3,7 +3,7 @@ import React from "react";
 function TodoSearch({ searchValue, setSearchValue }) {
   return (
     <input
-      placeholder="Anotá tu tarea pendiente"
+      placeholder="Buscá tu tarea"
       className="campo-search"
       value={searchValue}
       onChange={(e) => {

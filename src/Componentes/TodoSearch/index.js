@@ -1,6 +1,8 @@
 import React from "react";
+import { TodoContext } from "../TodoContext";
 
-function TodoSearch({ searchValue, setSearchValue }) {
+function TodoSearch() {
+  const { searchValue, setSearchValue } = React.useContext(TodoContext);
   return (
     <input
       placeholder="Buscá tu tarea"
@@ -8,7 +10,6 @@ function TodoSearch({ searchValue, setSearchValue }) {
       value={searchValue}
       onChange={(e) => {
         setSearchValue(e.target.value);
-        /* console.log("Escribiste en la consola", e.target.value); */
       }}
     />
   );

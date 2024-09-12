@@ -20,7 +20,7 @@ body {
   font-size: 1.5rem;
   background-color: black;
   color: var(--color-claro);
-  background-image: url(../public/images/pixel-effect-v.png);
+  background-image: url(../../../public/images/pixel-effect-v.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -48,6 +48,10 @@ body {
 
 .centrar-y {
   align-items: center;
+}
+
+.separar {
+  justify-content: space-between;
 }
 
 /* TODO COUNTER */
@@ -80,13 +84,26 @@ body {
   outline: 2px solid var(--color-purple);
 }
 
+/* LOADING */
+.padding-all {
+  padding: 1rem;
+}
+
+/* .container-loading {
+  padding: 1rem;
+}
+
+.loading-txt {
+  padding: 1rem;
+} */
+
 /* TODO LIST */
 .container-list {
   width: 280px;
   background-color: var(--color-purple);
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start */
   margin-top: 4rem;
   box-shadow: var(--box-shadow-light);
 }
@@ -148,12 +165,77 @@ body {
   color: var(--color-claro);
   font-weight: bolder;
   font-size: 3rem;
+  z-index: 1;
 }
 
 .boton-add:hover {
   cursor: pointer;
   color: var(--color-pink);
   background-color: var(--color-claro);
+}
+
+/* MODAL */
+.container-modal {
+  background-color: #42424265;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* TODO FORM */
+.contenedor-form {
+  width: 60vw;
+  min-height: 25vh;
+  background-color: var(--color-black);
+  gap: 1.5rem;
+  color: var(--color-green);
+  padding: 1rem;
+  box-shadow: var(--box-shadow-light);
+}
+
+.form-tag {
+  text-shadow: 1px 1px 1px var(--color-claro);
+}
+
+.form-texto {
+  width: 70%;
+  padding: 0.5rem;
+  resize: vertical;
+  color: var(--color-purple);
+}
+
+.form-texto::placeholder {
+  font-family: var(--fuente-principal);
+  color: grey;
+  font-size: 1rem;
+}
+
+.contenedor-botones {
+  width: 70%;
+  justify-content: space-between;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  font-family: var(--fuente-principal);
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: var(--color-claro) 2px solid;
+  text-shadow: 1px 1px 1px var(--color-black);
+  cursor: pointer;
+}
+
+.button-cancel {
+  background-color: var(--color-claro);
+  color: var(--color-pink);
+}
+
+.button-aceptar {
+  background-color: var(--color-claro);
+  color: var(--color-green);
 }
 
 /* HIDDEN */

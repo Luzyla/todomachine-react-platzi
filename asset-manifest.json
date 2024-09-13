@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/todomachine-react-platzi/static/css/main.a68ef0f8.css",
+    "main.js": "/todomachine-react-platzi/static/js/main.d3f3f3ff.js",
+    "static/media/pixel-effect-v.png": "/todomachine-react-platzi/static/media/pixel-effect-v.ba656dfbdb4003e81d01.png",
+    "index.html": "/todomachine-react-platzi/index.html",
+    "main.a68ef0f8.css.map": "/todomachine-react-platzi/static/css/main.a68ef0f8.css.map",
+    "main.d3f3f3ff.js.map": "/todomachine-react-platzi/static/js/main.d3f3f3ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a68ef0f8.css",
+    "static/js/main.d3f3f3ff.js"
+  ]
+}

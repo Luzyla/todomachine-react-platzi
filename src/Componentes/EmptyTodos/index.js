@@ -1,11 +1,9 @@
 import React from "react";
-import { CreateTodoButton } from "../CreateTodoButton";
 
 function EmptyTodos() {
   return (
     <>
-      <p>Crea tu primer TAREA!</p>
-      <CreateTodoButton />
+      <p className="flex centrar-x centrar-y empty-text">Crea una TAREA!</p>
     </>
   );
 }

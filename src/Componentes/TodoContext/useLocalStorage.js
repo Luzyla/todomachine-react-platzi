@@ -36,7 +36,7 @@ function useLocalStorage(itemName, initialValue) {
         setLoading(false);
         setError(true); //tambien puedo poner setError(error) para mostrar cuál es el error
       }
-    }, 3000);
+    }, 1000);
   }, []);
 
   const saveItem = (newTodos) => {

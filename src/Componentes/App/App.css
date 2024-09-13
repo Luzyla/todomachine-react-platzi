@@ -21,8 +21,9 @@ body {
   background-color: black;
   color: var(--color-claro);
   background-image: url(../../../public/images/pixel-effect-v.png);
-  background-size: cover;
+  background-size: 700px auto;
   background-repeat: no-repeat;
+  background-position: center top;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,6 +68,7 @@ body {
 /* TODO SEARCH */
 .campo-search {
   width: 50vw;
+  max-width: 480px;
   height: 35px;
   box-shadow: var(--box-shadow-light);
   padding: 0.3rem 0.5rem;
@@ -89,23 +91,19 @@ body {
   padding: 1rem;
 }
 
-/* .container-loading {
-  padding: 1rem;
-}
-
-.loading-txt {
-  padding: 1rem;
-} */
-
 /* TODO LIST */
 .container-list {
-  width: 280px;
+  width: 50vw;
+  max-width: 480px;
   background-color: var(--color-purple);
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start */
   margin-top: 4rem;
   box-shadow: var(--box-shadow-light);
+}
+
+/* EMPTY ITEM */
+.empty-text {
+  width: 50vw;
+  max-width: 480px;
 }
 
 /* TODO ITEM */
@@ -154,6 +152,7 @@ body {
 /* TODO BUTTON */
 .container-boton {
   width: 50vw;
+  max-width: 480px;
   justify-content: flex-end;
 }
 
@@ -186,13 +185,16 @@ body {
 
 /* TODO FORM */
 .contenedor-form {
-  width: 60vw;
+  width: 80vw;
+  max-width: 450px;
   min-height: 25vh;
   background-color: var(--color-black);
   gap: 1.5rem;
   color: var(--color-green);
   padding: 1rem;
   box-shadow: var(--box-shadow-light);
+  align-self: first baseline;
+  margin-top: 8rem;
 }
 
 .form-tag {

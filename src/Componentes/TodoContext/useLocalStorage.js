@@ -37,7 +37,7 @@ function useLocalStorage(itemName, initialValue) {
         setError(true); //tambien puedo poner setError(error) para mostrar cuál es el error
       }
     }, 1000);
-  }, []);
+  }, [initialValue, itemName]);
 
   const saveItem = (newTodos) => {
     localStorage.setItem(itemName, JSON.stringify(newTodos));
